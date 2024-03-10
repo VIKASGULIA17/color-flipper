@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color flipper</title>
+    <style>
+        .container {
+            max-height: 100vh;
+            max-width: 100vh;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50vh;
+        }
+
+        button {
+            height: 10vh;
+            width: 20vh;
+            color: rgb(255, 255, 255);
+            font-size: 3vh;
+            border-radius: 25px;
+            font-weight: 900;
+            transition: 1.4s;
+            position: relative;
+            animation-name: change;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            background-color: aqua;
+        }
+
+        @keyframes change {
+            0% {
+                color: red
+            }
+
+            25% {
+                color: yellow
+            }
+
+            50% {
+                color: blue;
+            }
+
+            75% {
+                color: green;
+            }
+
+            100% {
+                color: red;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                min-height: 600px;
+                min-width: 600px;
+            }
+
+            .container {
+                margin: 50vh;
+            }
+
+            button {
+                height: 40vh;
+                width: 60vh;
+                font-size: 4vh;
+            }
+
+            h2 {
+                font-size: 10vh;
+            }
+        }
+
+        @media only screen and (max-width: 320px) {
+            body {
+                min-height: 320px;
+                min-width: 320px;
+            }
+
+            .container {
+                margin: 50vh;
+            }
+
+            button {
+                height: 40vh;
+                width: 60vh;
+                font-size: 4vh;
+            }
+
+            h2 {
+                font-size: 10vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Color Code: <span class="color">#f00000</span></h2>
+        <button class="btn btn-hero" id="btn">Click Here</button>
+    </div>
+</body>
+<script src="click.js"></script>
+
+</html>
