@@ -27,7 +27,7 @@
             animation-name: change;
             animation-duration: 1s;
             animation-iteration-count: infinite;
-            background-color: aqua;
+            background-color: rgb(228, 249, 249);
         }
 
         @keyframes change {
@@ -40,11 +40,11 @@
             }
 
             50% {
-                color: blue;
+                color: rgb(36, 237, 251);
             }
 
             75% {
-                color: green;
+                color: rgb(13, 240, 13);
             }
 
             100% {
@@ -59,38 +59,39 @@
             }
 
             .container {
-                margin: 50vh;
+                padding: 50vh;
             }
 
             button {
-                height: 40vh;
-                width: 60vh;
+                height: 20vh;
+                width: 50vh;
                 font-size: 4vh;
             }
 
             h2 {
-                font-size: 10vh;
+                font-size: 5vh;
             }
         }
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 400px) {
             body {
-                min-height: 320px;
-                min-width: 320px;
+                min-height: 390px;
+                min-width: 390px;
             }
 
             .container {
-                margin: 50vh;
+                padding: 50vh;
             }
 
             button {
-                height: 40vh;
-                width: 60vh;
+                height: 20vh;
+                width: 20vh;
                 font-size: 4vh;
             }
 
             h2 {
-                font-size: 10vh;
+                text-align: center;
+                font-size: 5vh;
             }
         }
     </style>
